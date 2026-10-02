@@ -7,6 +7,7 @@ class Plant:
     def show(self):
         print(f"{self.name}: {self.height}cm, {self.age} days old")
 
+
 print("=== Garden Plant Registry ===")
 
 rose = Plant("Rose", 25, 30)

@@ -6,9 +6,10 @@ class Plant:
 
     def grow(self):
         self.height += 0.8
-    
+
     def age(self):
         self.age_days += 1
+
 
 print("=== Garden Plant Growth ===")
 
