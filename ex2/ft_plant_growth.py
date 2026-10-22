@@ -4,10 +4,10 @@ class Plant:
         self.height = height
         self.age_days = age
 
-    def grow(self):
+    def grow(self) -> None:
         self.height += 0.8
 
-    def age(self):
+    def age(self) -> None:
         self.age_days += 1
 
 

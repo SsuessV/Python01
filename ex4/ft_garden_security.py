@@ -11,7 +11,7 @@ class Plant:
         else:
             print(f"{self._name}: Error, height can't be negative")
 
-    def set_age(self, age) -> None:
+    def set_age(self, age: int) -> None:
         if age >= 0:
             self._age_days = age
         else:
@@ -28,7 +28,7 @@ plant = Plant("Rose", 15.0, 10)
 
 print("=== Garden Security System ===")
 print(f"Plant created: {plant._name}: "
-      f"{plant._height}cm, {plant._age_days} days old")
+      f"{plant.get_height()}cm, {plant.get_age()} days old")
 print()
 plant.set_height(25)
 print(f"Height updated: {plant.get_height()}cm")

@@ -2,10 +2,10 @@ class Plant:
     def __init__(self, name: str, height: int, age: int) -> None:
         self.name = name
         self.height = height
-        self.age = age
+        self.age_days = age
 
-    def show(self):
-        print(f"{self.name}: {self.height}cm, {self.age} days old")
+    def show(self) -> None:
+        print(f"{self.name}: {self.height}cm, {self.age_days} days old")
 
 
 print("=== Garden Plant Registry ===")

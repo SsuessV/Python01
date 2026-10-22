@@ -22,10 +22,10 @@ class Flower(Plant):
 
     def show(self) -> None:
         super().show()
-        print(f" Color: {self._color}")
+        print(f"Color: {self._color}")
 
     def bloom(self) -> None:
-        print(f" {self._name} is blooming beautifully!")
+        print(f"{self._name} is blooming beautifully!")
 
 
 class Tree(Plant):
@@ -36,7 +36,7 @@ class Tree(Plant):
 
     def show(self) -> None:
         super().show()
-        print(f" Trunk diameter: {self._trunk_diameter}cm")
+        print(f"Trunk diameter: {self._trunk_diameter}cm")
 
     def produce_shade(self) -> None:
         print(f"Tree {self._name} now produces a shade of "
@@ -52,22 +52,18 @@ class Vegetable(Plant):
 
     def show(self) -> None:
         super().show()
-        print(f" Harvest season: {self._harvest_season}")
-        print(f" Nutritional value: {self._nutritional_value}")
+        print(f"Harvest season: {self._harvest_season}")
+        print(f"Nutritional value: {self._nutritional_value}")
 
     def age(self) -> None:
         super().age()
         self._nutritional_value += 1
 
-    def grow(self) -> None:
-        super().grow()
-
-
 print("=== Garden Plant Types ===")
 print("=== Flower")
 flower = Flower("Rose", 15.0, 10, "red")
 flower.show()
-print(" Rose has not bloomed yet")
+print("Rose has not bloomed yet")
 print("[asking the rose to bloom]")
 flower.show()
 flower.bloom()
