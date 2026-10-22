@@ -95,7 +95,7 @@ print("=== Vegetable")
 veggie = Vegetable("Tomato", 5.0, 10, "April", 0)
 veggie.show()
 print("[make tomato grow and age for 20 days]")
-for _ in range(20):
+for i in range(20):
     veggie.age()
     veggie.grow()
 veggie.show()
