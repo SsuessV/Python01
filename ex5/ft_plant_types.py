@@ -82,7 +82,6 @@ print("Rose has not bloomed yet")
 print("[asking the rose to bloom]")
 flower.show()
 flower.bloom()
-
 print()
 print("=== Tree")
 tree = Tree("Oak", 200.0, 365, 5.0)
