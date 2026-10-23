@@ -32,7 +32,7 @@ class Plant:
 plant = Plant("Rose", 15.0, 10)
 
 print("=== Garden Security System ===")
-print("Plant created: ", end="")
+print("Plant created:", end=" ")
 plant.show()
 print()
 plant.set_height(25)
