@@ -6,10 +6,13 @@ class Plant:
         self.set_height(height)
         self.set_age(age)
 
+    def show(self) -> None:
+        print(f"{self._name}: "
+              f"{round(self._height, 1)}cm, {self._age_days} days old")
+
     def set_height(self, height: float) -> None:
         if height >= 0:
             self._height = height
-
         else:
             print(f"{self._name}: Error, height can't be negative")
 
@@ -29,8 +32,8 @@ class Plant:
 plant = Plant("Rose", 15.0, 10)
 
 print("=== Garden Security System ===")
-print(f"Plant created: {plant._name}: "
-      f"{plant.get_height()}cm, {plant.get_age()} days old")
+print("Plant created: ", end="")
+plant.show()
 print()
 plant.set_height(25)
 print(f"Height updated: {plant.get_height()}cm")
